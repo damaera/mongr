@@ -125,6 +125,28 @@ db.search(searchData, function(err, result) {
 	// }
 })
 
+Another example, Search who 'a' follows and _not_ following back to 'a'.
+
+```javascript
+var searchData = [{
+	subj : 'a',
+	pred : 'follow',
+	obj : '!$notFolBack'
+}, {
+	subj : '!$notFolBack',
+	pred : 'follow',
+	obj : 'a'
+}]
+
+db.search(searchData, function(err, result) {
+	console.log(result)
+	// result is something like this
+	// {
+	// 	notFolBack: ['c'],
+	//	value: [ {...} ]
+	// }
+})
+
 Another example, Search follow of follow from 'a'.
 
 ```javascript
