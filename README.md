@@ -1,5 +1,5 @@
 # Mongr
-**Mongr** is graph database built on the document-stored MongoDB and its for Node.js!. **Mongr** using subj-pred-obj triplestores for storing graph data.
+**Mongr** is graph database built on the document-stored MongoDB and its for Node.js. **Mongr** using _subj-pred-obj_ triplestores for storing graph data.
 
 example data
 ```javascript
@@ -84,7 +84,7 @@ b -: follow -> a
 c -: follow -> d
 ```
 
-Search who 'a' follows.
+Search who `a` follows.
 
 ```javascript
 var searchData = [{
@@ -103,7 +103,7 @@ db.search(searchData, function(err, result) {
 })
 ```
 
-Another example, Search who 'a' follows and following back to 'a'.
+Another example, Search who `a` follows and following back to 'a'.
 
 ```javascript
 var searchData = [{
@@ -124,8 +124,9 @@ db.search(searchData, function(err, result) {
 	//	value: [ {...} ]
 	// }
 })
+```
 
-Another example, Search who 'a' follows and _not_ following back to 'a'.
+Another example, Search who `a` follows and _not_ following back to 'a'.
 
 ```javascript
 var searchData = [{
@@ -147,7 +148,7 @@ db.search(searchData, function(err, result) {
 	// }
 })
 
-Another example, Search follow of follow from 'a'.
+Another example, Search follow of follow from `a`.
 
 ```javascript
 var searchData = [{
