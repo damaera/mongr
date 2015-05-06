@@ -1,0 +1,28 @@
+{
+  "name": "mongr",
+  "version": "0.0.1",
+  "description": "graph database on top mongodb",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/damaera/mongr.git"
+  },
+  "keywords": [
+    "mongo",
+    "graph",
+    "database",
+    "triplestore",
+    "mongodb"
+  ],
+  "author": "damaera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/damaera/mongr/issues"
+  },
+  "homepage": "https://github.com/damaera/mongr",
+  "dependencies": {
+    "lodash": "^3.8.0",
+    "mongodb": "^1.4.35",
+    "mongoskin": "^1.4.13"
+  }
+}
