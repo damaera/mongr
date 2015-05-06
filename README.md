@@ -126,7 +126,7 @@ db.search(searchData, function(err, result) {
 })
 ```
 
-Another example, Search who `a` follows and _not_ following back to 'a'.
+Another example, Search who `a` follows and _not_ following back to `a`.
 
 ```javascript
 var searchData = [{
@@ -147,6 +147,7 @@ db.search(searchData, function(err, result) {
 	//	value: [ {...} ]
 	// }
 })
+```
 
 Another example, Search follow of follow from `a`.
 
